@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Ive not decided on the name yet</h1>
+      <p class="subtitle"></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container narrow">
+      <h2>About the App</h2>
+
+      <p>This app is currently being developed by me recently</p>
+
+      <p>
+        It brings together training schedules, communication, performance
+        tracking, and community interaction etc into one simple, modern
+        experience specifically for swimming
+        <br />
+        Everything listed below is a high level abstraction of the features i
+        want to add and its only an mvp list
+      </p>
+
+      <h2>Built for Coaches</h2>
+
+      <p>
+        Coaches can create and manage their entire club directly within the
+        app:
+      </p>
+
+      <ul class="feature-list">
+        <li>Create clubs and fully customisable squads</li>
+        <li>Schedule training sessions using a built-in calendar</li>
+        <li>Write, save, reuse, and share detailed training sets</li>
+        <li>Post squad-specific announcements and updates</li>
+        <li>View swimmer personal bests across all pool formats</li>
+        <li>Approve members and control access securely</li>
+      </ul>
+
+      <p>
+        Everything is organised by squad, ensuring swimmers only see what’s
+        relevant so theres no confusion or clutter
+      </p>
+
+      <h2>Built for swimmers</h2>
+
+      <p>Swimmers get a clear and focused view of training, progress etc</p>
+
+      <ul class="feature-list">
+        <li>See upcoming sessions instantly on the dashboard</li>
+        <li>view sets for each session (if the coach writes one )</li>
+        <li>
+          track pb in one place and accurately convert between long/short/yard
+          times
+        </li>
+        <li>celebrate achievements and milestones</li>
+        <li>stay connected with coaches and teammates</li>
+        <li>ability to track/register attendance maybe</li>
+      </ul>
+
+      <h2>Community stuff</h2>
+
+      <p>
+        Maybe there could also be a community space with explore pages etc for
+        swimmers (still thinking of nuances for now):
+      </p>
+
+      <ul class="feature-list">
+        <li>
+          Coaches can share training sets if they want to with a wider
+          community or look at other sets and react/comment on them, and maybe
+          export the sets so they can use themselves
+        </li>
+        <li>Swimmer achievements are posted eg pbs and milestones</li>
+        <li>etc ...</li>
+      </ul>
+
+      <p>
+        Designed to be scalable hopefully, and i try to make sure u only see
+        what u need to see so its not extremely confusing
+      </p>
+      <p>all clubs are in privacy</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects">
+    <div class="container">
+      <h2>Current Features that ive implemented in my half finished mvp</h2>
+      <h2>Coach POV:</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/HomePageForCoach.jpeg" alt="HomePageForCoach" />
+          </div>
+          <h3>Home Page</h3>
+          <p>This page should hopefully have more stuff, as more squads/swimmers are added
+            and more features are introduced
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/ClubManagerForCoach.jpeg" alt="ClubManagerForCoach" />
+          </div>
+          <h3>Club Manager</h3>
+          <p>Where the coach will manage all their clubs. Currently there is only one club but
+            if one coach is in more than one club then there will be a separate ClubSelector screen.
+            You can see your squads etc.
+            <br>
+            The join requests are for swimmers who want to join the club,
+            and the coach has to permit them whilst the transfer requests are for swimmers who are in
+            the club and want to tranfser to a different squad.
+            <br>
+            Invite assistant coach means other coaches must be invited by the headcoach to join the club
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/SquadPerformancePageForCoach.jpeg" alt="SquadPerformancePageForCoach" />
+          </div>
+          <h3>Squad Performance Page</h3>
+          <p>
+            From the ClubManager page, click on the performance button in a squad
+            <br>
+            For each squad a coach is in, they will be able to view the performance/pbs etc of swimmers
+            and will be listed here. Refer to below for other features that will be added
+            <br>
+            Theres an error in the screenshot cos of a bug to do with 50m events but ive fixed it now
+          </p>
+        </div>
+
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/TrainingScheduleForSquadCoach.jpeg" alt="TrainingScheduleForSquadCoach" />
+          </div>
+          <h3>Training Schedule</h3>
+          <p>
+            From the ClubManager page, click on the training button in a squad
+            <br>
+            Here the coach will be able to see their upcoming sessions and view its details
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/ExampleOfTrainingEditingCoach.jpeg" alt="ExampleOfTrainingEditingCoach" />
+          </div>
+          <h3>Example of Training Editing</h3>
+          <p>
+            From the TrainingSchedule page, click on the edit button in a session
+            <br>
+            Here the coach can edit the session details
+            <br>
+            Again refer to below for other features that will be added
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/ProfilePageForCoach.jpeg" alt="ProfilePageForCoach" />
+          </div>
+          <h3>Profile Page</h3>
+          <p>
+            Kinda basic but will add more details
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <h2 style="margin-top: 100px;">Swimmer POV:</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/HomeForSwimmer.jpeg" alt="HomePageForSwimmer" />
+          </div>
+          <h3>Home Page</h3>
+          <p>This page should hopefully have more stuff when more features r added
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/ClubHomeScreenForSwimmer.jpeg" alt="ClubHomeScreenForSwimmer" />
+          </div>
+          <h3>Club Home Screen</h3>
+          <p>
+            See your squad
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/TrainingScheduleForSwimmer.jpeg" alt="TrainingScheduleForSwimmer" />
+          </div>
+          <h3>Training Schedule</h3>
+          <p>
+            See your training schedule
+          </p>
+
+          <br>
+          You can't edit the set tho
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/PBPageForSwimmerLongCourse.jpeg" alt="PBPageForSwimmerLongCourse" />
+          </div>
+          <h3>PB Page</h3>
+          <p>
+            See your PBs
+          </p>
+        </div>
+
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/PBPageForSwimmer.jpeg" alt="PBPageForSwimmer" />
+          </div>
+          <h3>PB Page</h3>
+          <p>
+            Also a section for short course yards
+            <br>
+            refer to below for planned features
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/AddNewPBForSwimmer.jpeg" alt="AddNewPBForSwimmer" />
+          </div>
+          <h3>Add New PB</h3>
+          <p>
+            Add a new PB
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/AddNewPBScrolledDownForSwimmer.jpeg" alt="AddNewPBScrolledDownForSwimmer" />
+          </div>
+          <h3>Add New PB</h3>
+          <p>
+            Add a new PB scrolled down
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/NotificationsForSwimmer.jpeg" alt="NotificationsForSwimmer" />
+          </div>
+          <h3>Notifications</h3>
+          <p>
+            If the coach adds/changes/cancels a set etc, you can see it
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/ProfilePageForSwimmer.jpeg" alt="ProfilePageForSwimmer" />
+          </div>
+          <h3>Profile Page</h3>
+          <p>
+            Kinda basic but will add more details
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container narrow">
+      <h2>Future Considerations</h2>
+
+      <p>
+        The stuff u see above is an extremely high-level overview/mvp of the app.
+        Its smth Ive coded so far so i can visualise a foundation
+      </p>
+
+      <p>
+        Everything mentioned below will be considered/planned features
+      </p>
+
+      <h2>General:</h2>
+
+      <ul class="feature-list">
+        <li>Better and smoother UI</li>
+        <li>AI Application</li>
+        <li>Notifications</li>
+        <li>Dark Mode</li>
+        <li>Offline Usage for some features</li>
+        <li>Profile customisation</li>
+        <li>...</li>
+      </ul>
+
+      <h2>For Coaches</h2>
+
+      <ul class="feature-list">
+        <li>New club/squad level analytics section with reasoning and insights eg what worked well? How many PBs etc etc
+        </li>
+        <li>Post annoucements/updates to club/squad</li>
+        <li>Club level/squad level customisation. Add a description? Motto? Colour theme, images, logo etc</li>
+        <li>History of improvements</li>
+        <li>A social aspect with other coaches/social media like interface</li>
+        <li>Write, save, reuse, download and share detailed training sets with other coaches</li>
+        <li>In the implementation of the social aspect, interactions with other coach's sets etc</li>
+        <li>Writing sets will be easier and more structured
+          <ul class="feature-list">
+            <li>Broken into toggleable sections like Warmup, Pre Main, Main, Swim Down</li>
+            <li>Smart/Lazy generation - if you ask AI to write a warmup to compliment an already written main set etc,
+              or if you want AI to generate a whole set, machine learning will take into context the analytics of the
+              squad,
+              and write a set
+            </li>
+            <li>Detection, eg if you write a 4x then the AI will shadow generate options like 100m or 200m etc</li>
+            <li>AI summary of a set for coaches and swimmers to understand why, taking analytics into context</li>
+            <li>Tags for sets, so eg Comp Warmup tag, or threshold tag</li>
+            <li>Customisation, if its a hard set then why not make it red?</li>
+          </ul>
+        </li>
+        <li>Attendance tracking</li>
+        <li>...</li>
+      </ul>
+
+
+      <h2>For Swimmers</h2>
+
+      <ul class="feature-list">
+        <li>AI will analyse and label how many calories each set is</li>
+        <li>Track own calories section, and monitor progress between calory gain and loss</li>
+        <li>Track own calories by simply typing what you ate, and AI will label amount for you</li>
+        <li>Analytics section</li>
+        <li>PB section will be able to input splits</li>
+        <li>PB section will have conversion buttons between long/short/yard course for all times
+          <ul class="feature-list">
+            <li>Will use smart conversion like machine learning to take into context your analytics and splits to
+              convert</li>
+          </ul>
+        </li>
+        <li>Able to notify coaches you cant make a training date otherwise app assumes u will attend</li>
+        <li>Able to show achievements like new PB or winning comps</li>
+        <li>Calendar integration for training</li>
+        </li>
+        <li>...</li>
+      </ul>
+
+
+  </section>
+
+  <!-- FEEDBACK -->
+  <section class="feedback">
+    <div class="container narrow">
+      <h2>Feedback & Suggestions</h2>
+      <p>
+        If you have ideas or improvements, please fill out the form by clicking link below
+        <br>
+        if i like it ill include it in the suggestions
+        <br>
+        Also I need a <strong>name</strong> for the app. If you have a good name then please fill in the form below as
+        well
+        <br>
+      </p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScA6jl7LrkqhKG7hOSNBX2m_fuWj5qbJTLnr-7NZPF8QtXCqg/viewform?usp=publish-editor"
+        target="_blank" class="cta">
+        Leave Feedback
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Xuanming</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
